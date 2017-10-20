@@ -178,7 +178,7 @@ export default {
                         yplacemark.clusterName = placemark.clusterName;
                         markers.push(yplacemark);
                     }
-                    
+
                     myGeoObjects.add(yplacemark);
                 })
             }
@@ -186,6 +186,8 @@ export default {
             this.myMap.geoObjects.add(myGeoObjects);
 
             utils.createClusters(markers, this.clusterOptions, this.myMap);
+
+            this.$emit('init', this.myMap);
         }
     },
     watch: {

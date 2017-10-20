@@ -55,6 +55,8 @@ Use `<yandex-map>` tag to enable the map instance and use attributes to define m
 You may define placemarks on your map by using `<ymap-marker>` tag or set an array of objects with placemark options through `<yandex-map>` attribute `placemarks`. You also can use both methods together.
 The Map instance rerender when changed link on array with markers in `placemarks` property or marker coordinates if marker is a component. 
 
+Also you can use 'init' event on the `<yandex-map>` componet.
+
 Type of marker in `marker-type` attribute can be:
 
 * Placemark
